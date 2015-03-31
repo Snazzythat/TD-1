@@ -3,7 +3,7 @@ package main.model.critter;
 /**
  * Critter Factory that builds different types of Critters based on level 
  * @author justin.bell
- * @version 0.1
+ * @version 0.2
  */
 public class CritterFactory {
 	
@@ -13,7 +13,7 @@ public class CritterFactory {
 	 * @param type
 	 * @return Type 0 returns a BasicCritter. Otherwise a BasicCritter is returned
 	 */
-	public Critter createCritter(int level, int type) {
+	private static Critter createCritter(int level, int type) {
 		Critter critter;
 		if(type == 0) {
 			critter = new BasicCritter(level);
@@ -29,9 +29,9 @@ public class CritterFactory {
 	 * @param level
 	 * @return random type of Critter
 	 */
-	public Critter createRandomCritter(int level) {
+	public static Critter createRandomCritter(int level) {
 		int randomInt = Math.round((float)Math.random());
-		Critter critter = this.createCritter(level, randomInt);
+		Critter critter = createCritter(level, randomInt);
 		return critter;
 	}
 }
