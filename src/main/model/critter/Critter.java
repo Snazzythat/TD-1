@@ -79,6 +79,10 @@ public abstract class Critter {
 		return velocityVector;
 	}
 	
+	public void setPosition(Vector2D position) {
+		this.position = position;
+	}
+	
 	/**
 	 * moves the position of the critter according to its speed
 	 */

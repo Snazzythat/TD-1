@@ -2,6 +2,8 @@ package main.model.critter;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import main.model.Vector2D;
 import main.model.critter.CritterFactory;
 
 /**
@@ -13,11 +15,13 @@ public class CritterManager {
 	private List<Critter> critterList = new ArrayList<Critter>();
 	
 	/**
-	 * adds a critter to the CritterManager's list with an int, level, as an input
+	 * adds a critter to the CritterManager's list
 	 * @param level
+	 * @param position
 	 */
-	public void addCritter(int level) {
+	public void addCritter(int level, Vector2D position) {
 		Critter critter = CritterFactory.createRandomCritter(level);
+		critter.setPosition(position);
 		critterList.add(critter);
 	}
 	
