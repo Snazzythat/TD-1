@@ -3,8 +3,7 @@
 A tower defense game made for ECSE 321, Winter 2015
 
 ## Authors
-..*
-1. Roman Andoni
-2. Justin Bell
-3. Enrique Gallet Zambrano
-4. Arthur Kuhn
+* Roman Andoni
+* Justin Bell
+* Enrique Gallet Zambrano
+* Arthur Kuhn
