@@ -17,8 +17,11 @@ public class CritterFactory {
 		Critter critter;
 		if(type == 0) {
 			critter = new BasicCritter(level);
-		}
-		else {
+		} else if(type == 1) {
+			critter = new FastCritter(level);
+		} else if(type == 2) {
+			critter = new StrongCritter(level);
+		} else {
 			critter = new BasicCritter(level);
 		}
 		return critter;	
@@ -30,7 +33,8 @@ public class CritterFactory {
 	 * @return random type of Critter
 	 */
 	public static Critter createRandomCritter(int level) {
-		int randomInt = Math.round((float)Math.random());
+		final int typesOfCritters = 3; 
+		int randomInt = Math.round((float)Math.random()*typesOfCritters);
 		Critter critter = createCritter(level, randomInt);
 		return critter;
 	}

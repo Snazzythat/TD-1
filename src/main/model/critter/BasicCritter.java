@@ -14,6 +14,7 @@ public class BasicCritter extends Critter {
 	 * @param level
 	 */
 	public BasicCritter(int level) {
+		//TODO tweak critter stats
 		health = level;
 		strength = level;
 		speed = level;
