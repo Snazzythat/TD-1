@@ -7,7 +7,7 @@ import main.model.critter.CritterFactory;
 /**
  * CritterManager keeps a reference and manipulates all initialized Critters
  * @author justin.bell
- * @version 0.1
+ * @version 0.2
  */
 public class CritterManager {
 	private List<Critter> critterList = new ArrayList<Critter>();
@@ -34,16 +34,15 @@ public class CritterManager {
 	 * @return
 	 */
 	public List<Critter> getCritters() {
-		List<Critter> critterList = this.critterList;
 		return critterList;
 	}
 	
 	/**
-	 * executes one frame of critter logic
+	 * updates movement of critters according to one unit of time
 	 */
-	public void update() {
-		//TODO build logic critter logic
+	public void moveCritters() {
+		for(Critter critter : critterList) {
+			critter.move();
+		}
 	}
-	
-	
 }
