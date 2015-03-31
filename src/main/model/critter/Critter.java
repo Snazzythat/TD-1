@@ -15,7 +15,10 @@ public abstract class Critter {
 	protected int health;
 	protected int strength;
 	protected int speed;
+	protected int reward;
 	protected boolean armour;
+	
+	public Critter() {}
 	
 	/**
 	 * returns the position of the critter
@@ -39,6 +42,14 @@ public abstract class Critter {
 	 */
 	public int getStrength() {
 		return strength;
+	}
+	
+	/**
+	 * returns reward of the critter
+	 * @return reward of the critter
+	 */
+	public int getReward() {
+		return reward;
 	}
 	
 	/**
@@ -85,5 +96,13 @@ public abstract class Critter {
 		} else {
 			return false;
 		}
+	}
+	
+	/**
+	 * Reduces health by an int, damage
+	 * @param damage
+	 */
+	public void takeDamage(int damage) {
+		health -= damage;
 	}
 }
