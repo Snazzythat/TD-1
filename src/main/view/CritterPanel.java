@@ -16,7 +16,7 @@ import main.controller.GameController;
  * @version 0.1
  */
 @SuppressWarnings("serial")
-public class CritterPanel extends JPanel implements Observer, ActionListener{
+public class CritterPanel extends JPanel implements Observer, ActionListener {
 	JButton addCritterButton;
 	JLabel numberOfCrittersLabel;
 	GameController gc;

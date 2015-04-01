@@ -1,7 +1,7 @@
 package main.model.critter;
 
 /**
- * Faster subCritter of Critter
+ * Stronger subCritter of Critter
  * @author justin.bell
  * @version 0.1
  */
