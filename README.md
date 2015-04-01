@@ -6,7 +6,7 @@ A tower defense game made for ECSE 321, Winter 2015
 * Andoni, R.
 * Bell, J.
 * Enrique Gallet Zambrano, L.
-* Kuhn, Arthur
+* Kuhn, A.
 
 ## Documentation
 Documentation for this project can be retrieved from http://belljustin.com/TD
