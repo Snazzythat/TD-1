@@ -49,4 +49,12 @@ public class CritterManager {
 			critter.move();
 		}
 	}
+	
+	/**
+	 * Return an int representing the numberof Critters in critterList
+	 * @return number of Critters in critterList
+	 */
+	public int countCritters() {
+		return critterList.size();
+	}
 }
