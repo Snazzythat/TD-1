@@ -81,7 +81,7 @@ public class Vector2D {
 	 */
 	public Vector2D getDisplacementVector(Vector2D v) {
 		int displacementX = x - v.getX();
-		int displacementY = y = v.getY();
+		int displacementY = y - v.getY();
 		Vector2D displacementVector = new Vector2D(displacementX, displacementY);
 		return displacementVector;
 	}
